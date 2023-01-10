@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_insurancecategory"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_addpolicy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_allpolicy"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_allpolicyholder" />
+        <item
+            android:id="@+id/nav_calculate"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_calculatepolicy" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_paymentinstallment" />
+        <item
+            android:id="@+id/nav_bonus"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_bonus" />
+        <item
+            android:id="@+id/nav_hospitality"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_hospitality" />
+        <item
+            android:id="@+id/nav_claim"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_claim" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_settings" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_profile" />
+    </group>
+</menu>

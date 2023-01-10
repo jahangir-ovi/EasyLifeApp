@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".AddPolicy">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/til_name"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="#AA0D0D"
+            app:startIconDrawable="@drawable/ic_baseline_person_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_name"
+                android:hint="Enter Name"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:prefixText="+91"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory*"
+            app:helperTextTextColor="#931212"
+            app:startIconDrawable="@drawable/ic_baseline_add_ic_call_24">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_phone"
+                android:hint="Enter Phone Number"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:prefixText="+91"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory*"
+            app:helperTextTextColor="#970931"
+            app:startIconDrawable="@drawable/ic_baseline_attach_money_24">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_amount"
+                android:hint="Enter Amount"
+                android:imeOptions="actionNext"
+                android:inputType="number"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:prefixText="+91"
+            app:counterEnabled="true"
+            app:counterMaxLength="3"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="#9E081F"
+            app:startIconDrawable="@drawable/ic_baseline_workspaces_24">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_interest"
+                android:hint="Enter Interest %"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:prefixText="+91"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="#A1102C"
+            app:startIconDrawable="@drawable/ic_baseline_layers_24">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_policy_year"
+                android:hint="Enter Policy Year"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:prefixText="+91"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="clear_text"
+            app:helperText="Mandatory"
+            app:helperTextTextColor="#9F0D2A"
+            app:startIconDrawable="@drawable/ic_baseline_perm_identity_24">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_nid"
+                android:hint="Enter Nid Number"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:prefixText="+91"
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+            app:endIconMode="custom"
+            app:helperText="Optional"
+            app:helperTextTextColor="#00BCD4"
+            app:startIconDrawable="@drawable/ic_baseline_alternate_email_24">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/et_email"
+                android:hint="Enter Email Id"
+                android:imeOptions="actionNext"
+                android:inputType="textPersonName"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="86dp"
+                android:id="@+id/loginbutton"
+                android:layout_below="@id/password"
+                android:text="Save"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"
+                android:onClick="login"
+                android:textSize="20sp"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="#8E24AA"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+</LinearLayout>
